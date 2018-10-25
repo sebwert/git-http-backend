@@ -5,7 +5,7 @@ A dead simple git smart-http server using nginx as a frontend. No authentication
 Usage:
 
 ```
-docker run -d -p 4080:80 -v /path/to/host/gitdir:/git gocdcontrib/git-http-backend:v1
+docker run -d -p 4080:80 -v /path/to/host/gitdir:/git gocdcontrib/git-http-backend:v2
 ```
 
 Unauthenticated push will not work unless you enable it in repositories:
