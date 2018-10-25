@@ -17,7 +17,7 @@ VOLUME ["/git"]
 # - nginx, because it is our frontend
 RUN apk add --update nginx && \
     apk add --update git && \
-    apk add --update git-gitweb && \
+    apk add --update git-daemon && \
     apk add --update fcgiwrap && \
     apk add --update spawn-fcgi && \
     rm -rf /var/cache/apk/*
