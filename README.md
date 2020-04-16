@@ -20,3 +20,19 @@ git config http.receivepack true
 Source for Docker images at: https://hub.docker.com/r/gocdcontrib/git-http-backend/tags/
 
 For docker image with tag v2, the repo digest is: gocdcontrib/git-http-backend@sha256:851766e546665ac795997a140128fddd73a347b5eb665684bfad3b91f7cadbda
+
+
+Added Auth. Check Volum Mapping. Here is a compos example:
+
+```
+version: '3.3'
+
+services:
+  gitbox:
+    image: <LOCALIMAGENAME>
+    restart: always
+    volumes:
+      - <LOCALGIT>:/git
+      - <LOCALAUTH>:/ng-auth
+```
+
